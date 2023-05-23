@@ -5,8 +5,7 @@
 #include <vector>
 #include <cmath>
 #include"showdata.h"
-#include"catagorical.h"
-#include"iris_logistic.h"
+
 
 using namespace std;
 
@@ -26,7 +25,9 @@ display();
  int button ;
 
  cout<<"1.SIMPLE LINEAR REGRESSION"<<endl;
- cout<<"2.LOGISTIC LINEAR REGRESSION\n"<<endl;
+ cout<<"2.MULTIPLE LINEAR REGRESSION"<<endl;
+ cout<<"3.LOGISTIC REGRESSION"<<endl;
+ cout<<"4.POLYNOMIAL REGRESSION\n"<<endl;
 
  cout<<"which type of regression do you want to handle?\n"<<endl;
 
@@ -38,7 +39,6 @@ cout<<"please enter your button"<<endl;
     {
 
         cout<<"welcome to simple linear regression task"<<endl;
-        cout<<"Do you want to test any dataset containing numerical value given by user?"<<endl;
         cout<<"Press 1 to continue :"<<endl;
         cout<<"Press 0 to exit program:"<<endl;
 
@@ -48,7 +48,9 @@ cout<<"please enter your button"<<endl;
 
         if (press2==1)
         {
- func1();
+mean();
+OLS();
+main();
         }
         else if(press2==0)
             exit(0);
@@ -63,8 +65,7 @@ cin>>press4;
 
 if(press4==1)
 {
-    func3();
-    test();
+
 }
 else if(press4==0)
     exit(0);
